@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     bool                 parsed, doPlot, doHeatmap, doCorr, fold;
     string               corrFileName, model, outFileName, outFmt;
     Index                ti, tf, shift, nPar, thinning;
-    double               svdTol;
+    double               svdTol,plotrange;
     Minimizer::Verbosity verbosity;
     
     opt.addOption("" , "ti"       , OptParser::OptType::value  , false,
@@ -38,14 +38,16 @@ int main(int argc, char *argv[])
                   "singular value elimination threshold", "0.");
     opt.addOption("v", "verbosity", OptParser::OptType::value  , true,
                   "minimizer verbosity level (0|1|2)", "0");
-    opt.addOption("o", "output", OptParser::OptType::value  , true,
+    opt.addOption("o", "output",    OptParser::OptType::value  , true,
                   "output file", "");
     opt.addOption("" , "uncorr"   , OptParser::OptType::trigger, true,
                   "only do the uncorrelated fit");
-    opt.addOption("" , "fold"   , OptParser::OptType::trigger, true,
+    opt.addOption("" , "fold"     , OptParser::OptType::trigger, true,
                   "fold the correlator");
     opt.addOption("p", "plot"     , OptParser::OptType::trigger, true,
                   "show the fit plot");
+    opt.addOption("r" , "range",    OptParser::OptType::value  , true,
+                  "vertical range multiplier in plots", "20.");
     opt.addOption("h", "heatmap"  , OptParser::OptType::trigger, true,
                   "show the fit correlation heatmap");
     opt.addOption("", "help"      , OptParser::OptType::trigger, true,
@@ -70,6 +72,7 @@ int main(int argc, char *argv[])
     doCorr       = !opt.gotOption("uncorr");
     fold         = opt.gotOption("fold");
     doPlot       = opt.gotOption("p");
+    plotrange    = opt.optionValue<Index>("range");
     doHeatmap    = opt.gotOption("h");
     switch (opt.optionValue<unsigned int>("v"))
     {
@@ -335,7 +338,7 @@ int main(int argc, char *argv[])
         }
         p.reset();
         p << PlotRange(Axis::x, 1, maxT);
-        p << PlotRange(Axis::y, e0 - 20.*e0Err, e0 + 20.*e0Err);
+        p << PlotRange(Axis::y, e0 - plotrange*e0Err, e0 + plotrange*e0Err);
         p << Color("rgb 'blue'") << PlotBand(0, maxT, e0 - e0Err, e0 + e0Err);
         p << Color("rgb 'blue'") << PlotHLine(e0);
         p << Color("rgb 'red'") << PlotData(effMassT, effMass);
