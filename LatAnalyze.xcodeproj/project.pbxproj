@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68A4A4A322A6AB9A00C348AB /* peramb-compare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68A4A4A222A6AB9A00C348AB /* peramb-compare.cpp */; };
 		68BD911422A29645005D1211 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD588522A29435005D1211 /* Exceptions.cpp */; };
 		68BD911522A29645005D1211 /* Mat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD589322A29435005D1211 /* Mat.cpp */; };
 		68BD911622A29645005D1211 /* Math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD588C22A29435005D1211 /* Math.cpp */; };
@@ -49,7 +50,6 @@
 		68BD913B22A296C4005D1211 /* Global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD5A1D22A29436005D1211 /* Global.cpp */; };
 		68BD914822A298EC005D1211 /* bootstrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD913C22A298A3005D1211 /* bootstrap.cpp */; };
 		68BD914A22A29905005D1211 /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
-		68BD915722A29B02005D1211 /* peramb_compare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD914B22A29ACD005D1211 /* peramb_compare.cpp */; };
 		68BD915822A29B13005D1211 /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
 		68E76D1422A1C12D00310CB5 /* 2pt-fit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6808853922A1B2AE001D368C /* 2pt-fit.cpp */; };
 		68E76D1622A1C15C00310CB5 /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
@@ -120,6 +120,7 @@
 		68088E8622A1B2B0001D368C /* sample-read.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "sample-read.cpp"; sourceTree = "<group>"; };
 		680897C822A1B2B2001D368C /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLatAnalyze.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A4A4A222A6AB9A00C348AB /* peramb-compare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "peramb-compare.cpp"; sourceTree = "<group>"; };
 		68BD587522A29435005D1211 /* Dataset.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dataset.hpp; sourceTree = "<group>"; };
 		68BD587622A29435005D1211 /* XYSampleData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XYSampleData.cpp; sourceTree = "<group>"; };
 		68BD587722A29435005D1211 /* Random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Random.cpp; sourceTree = "<group>"; };
@@ -214,8 +215,7 @@
 		68BD911322A29626005D1211 /* MathParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MathParser.hpp; path = build/lib/Core/MathParser.hpp; sourceTree = SOURCE_ROOT; };
 		68BD913C22A298A3005D1211 /* bootstrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bootstrap.cpp; sourceTree = "<group>"; };
 		68BD914122A298D5005D1211 /* bootstrap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bootstrap; sourceTree = BUILT_PRODUCTS_DIR; };
-		68BD914B22A29ACD005D1211 /* peramb_compare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = peramb_compare.cpp; sourceTree = "<group>"; };
-		68BD915022A29AEA005D1211 /* peramb_compare */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = peramb_compare; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BD915022A29AEA005D1211 /* peramb-compare */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "peramb-compare"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68E76D0D22A1C11500310CB5 /* 2pt-fit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "2pt-fit"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -278,7 +278,7 @@
 			children = (
 				6808853922A1B2AE001D368C /* 2pt-fit.cpp */,
 				68BD913C22A298A3005D1211 /* bootstrap.cpp */,
-				68BD914B22A29ACD005D1211 /* peramb_compare.cpp */,
+				68A4A4A222A6AB9A00C348AB /* peramb-compare.cpp */,
 			);
 			path = physics;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 				681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */,
 				68E76D0D22A1C11500310CB5 /* 2pt-fit */,
 				68BD914122A298D5005D1211 /* bootstrap */,
-				68BD915022A29AEA005D1211 /* peramb_compare */,
+				68BD915022A29AEA005D1211 /* peramb-compare */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -542,9 +542,9 @@
 			productReference = 68BD914122A298D5005D1211 /* bootstrap */;
 			productType = "com.apple.product-type.tool";
 		};
-		68BD914F22A29AEA005D1211 /* peramb_compare */ = {
+		68BD914F22A29AEA005D1211 /* peramb-compare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68BD915422A29AEA005D1211 /* Build configuration list for PBXNativeTarget "peramb_compare" */;
+			buildConfigurationList = 68BD915422A29AEA005D1211 /* Build configuration list for PBXNativeTarget "peramb-compare" */;
 			buildPhases = (
 				68BD914C22A29AEA005D1211 /* Sources */,
 				68BD914D22A29AEA005D1211 /* Frameworks */,
@@ -554,9 +554,9 @@
 			);
 			dependencies = (
 			);
-			name = peramb_compare;
+			name = "peramb-compare";
 			productName = peramb_compare;
-			productReference = 68BD915022A29AEA005D1211 /* peramb_compare */;
+			productReference = 68BD915022A29AEA005D1211 /* peramb-compare */;
 			productType = "com.apple.product-type.tool";
 		};
 		68E76D0C22A1C11500310CB5 /* 2pt-fit */ = {
@@ -618,7 +618,7 @@
 				681C509D22A1AFF500FF10F4 /* LatAnalyze */,
 				68E76D0C22A1C11500310CB5 /* 2pt-fit */,
 				68BD914022A298D5005D1211 /* bootstrap */,
-				68BD914F22A29AEA005D1211 /* peramb_compare */,
+				68BD914F22A29AEA005D1211 /* peramb-compare */,
 			);
 		};
 /* End PBXProject section */
@@ -683,7 +683,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BD915722A29B02005D1211 /* peramb_compare.cpp in Sources */,
+				68A4A4A322A6AB9A00C348AB /* peramb-compare.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,7 +789,6 @@
 					$GridPre/include,
 					"$Grid/build$(CONFIGURATION)/Grid",
 					$Grid,
-					$Grid/Grid,
 					$GridPre/openmpi/include,
 					$GridPre/lime/include,
 				);
@@ -799,7 +798,6 @@
 					"$Grid/build$(CONFIGURATION)/Grid",
 					"$Grid/build$(CONFIGURATION)/Hadrons",
 					$GridPre/openmpi/lib,
-					$GridPkg/lib,
 					$GridPre/lime/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
@@ -883,7 +881,6 @@
 					$GridPre/include,
 					"$Grid/build$(CONFIGURATION)/Grid",
 					$Grid,
-					$Grid/Grid,
 					$GridPre/openmpi/include,
 					$GridPre/lime/include,
 				);
@@ -893,7 +890,6 @@
 					"$Grid/build$(CONFIGURATION)/Grid",
 					"$Grid/build$(CONFIGURATION)/Hadrons",
 					$GridPre/openmpi/lib,
-					$GridPkg/lib,
 					$GridPre/lime/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
@@ -1053,7 +1049,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68BD915422A29AEA005D1211 /* Build configuration list for PBXNativeTarget "peramb_compare" */ = {
+		68BD915422A29AEA005D1211 /* Build configuration list for PBXNativeTarget "peramb-compare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68BD915522A29AEA005D1211 /* Debug */,

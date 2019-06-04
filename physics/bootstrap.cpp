@@ -1,11 +1,37 @@
+/*************************************************************************************
+ 
+ Compare perambulators
+ 
+ Source file: physics/bootstrap.cpp
+ 
+ Copyright (C) 2019
+ 
+ Author: Multiple (this version inherited from Andrew Yong)
+ Author: Michael Marshall <Michael.Marshall@ed.ac.uk>
+ 
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ 
+ See the full license in the file "LICENSE" in the top level distribution directory
+ *************************************************************************************/
+/*  END LEGAL */
+
 #include <Grid/Grid.h>
-//#include <LatAnalyze/Io/Io.hpp>
-//#include <LatAnalyze/Core/OptParser.hpp>
-//#include <LatAnalyze/Statistics/Dataset.hpp>
-#include <LatAnalyze/Io.hpp>
+#include <LatAnalyze/Io/Io.hpp>
 #include <LatAnalyze/Core/OptParser.hpp>
-#include <LatAnalyze/Dataset.hpp>
-#include <LatAnalyze/Hdf5File.hpp>
+#include <LatAnalyze/Statistics/Dataset.hpp>
+//#include <LatAnalyze/Io/Hdf5File.hpp>
 
 using namespace std;
 using namespace Latan;
@@ -64,6 +90,7 @@ std::string tokenReplaceCopy(std::string &str, const std::string token, const T 
   return sCopy;
 }
 
+#ifdef TURNS_OUT_THIS_WASNT_BUGGY
 template <typename T>
 void NonBuggyPtVectorMean(T &m, const Dataset<T> &ds, const std::vector<int> &selection)
 {
@@ -101,8 +128,10 @@ void NonBuggyBootstrapMean(Sample<T> &s, const Dataset<T> &ds, const SeedType se
     NonBuggyPtVectorMean(s[i], ds, selection);
   }
 }
+#endif //TURNS_OUT_THIS_WASNT_BUGGY
 
 // Debug - show me the averages for each timeslice
+#ifdef DEBUG
 void ShowTimeSliceAvg(const Dataset<DMat> &data) {
   const int nFile{static_cast<int>(data.size())};
   if( !nFile )
@@ -124,6 +153,7 @@ void ShowTimeSliceAvg(const Dataset<DMat> &data) {
     }
   }
 }
+#endif //DEBUG
 
 int main(int argc, char *argv[])
 {
@@ -233,8 +263,11 @@ int main(int argc, char *argv[])
       std::string sOutFileName{tokenReplaceCopy(outStem, "corr", corrNames[i])};
       if( binSize != 1 )
         data[i].bin(binSize);
-      //DMatSample out = data[i].bootstrapMean(nSample, seed);
+#ifdef TURNS_OUT_THIS_WASNT_BUGGY
       NonBuggyBootstrapMean(out, data[i], seed, nt);
+#else
+      DMatSample out = data[i].bootstrapMean(nSample, seed);
+#endif //TURNS_OUT_THIS_WASNT_BUGGY
       cout << "Saving sample to '" << sOutFileName << "' ...";
       Io::save<DMatSample>(out, sOutFileName);
       cout << " done" << endl;

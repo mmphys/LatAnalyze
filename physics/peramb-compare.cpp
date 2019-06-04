@@ -1,12 +1,11 @@
 /*************************************************************************************
  
- Grid physics library, www.github.com/paboyle/Grid
+ Compare perambulators
  
- Source file: Tests/Hadrons/Test_hadrons_distil.cc
+ Source file: physics/peramb-compare.cpp
  
- Copyright (C) 2015-2019
+ Copyright (C) 2019
  
- Author: Felix Erben <ferben@ed.ac.uk>
  Author: Michael Marshall <Michael.Marshall@ed.ac.uk>
  
  This program is free software; you can redistribute it and/or modify
