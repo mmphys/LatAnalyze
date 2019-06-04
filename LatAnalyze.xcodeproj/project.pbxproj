@@ -766,6 +766,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = $PROJECT_DIR/build;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -864,6 +865,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = $PROJECT_DIR/build;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -924,6 +926,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEPLOYMENT_LOCATION = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
@@ -934,10 +937,11 @@
 					$GridPkg/include,
 					$GridPre/include,
 				);
+				INSTALL_PATH = lib/.libs;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -945,6 +949,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEPLOYMENT_LOCATION = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
@@ -955,10 +960,11 @@
 					$GridPkg/include,
 					$GridPre/include,
 				);
+				INSTALL_PATH = lib/.libs;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
