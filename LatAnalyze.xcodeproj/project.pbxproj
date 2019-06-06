@@ -216,7 +216,7 @@
 		68BD913C22A298A3005D1211 /* bootstrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bootstrap.cpp; sourceTree = "<group>"; };
 		68BD914122A298D5005D1211 /* bootstrap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bootstrap; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BD915022A29AEA005D1211 /* peramb-compare */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "peramb-compare"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68E76D0D22A1C11500310CB5 /* 2pt-fit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "2pt-fit"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E76D0D22A1C11500310CB5 /* latan-2pt-fit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-2pt-fit"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,7 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */,
-				68E76D0D22A1C11500310CB5 /* 2pt-fit */,
+				68E76D0D22A1C11500310CB5 /* latan-2pt-fit */,
 				68BD914122A298D5005D1211 /* bootstrap */,
 				68BD915022A29AEA005D1211 /* peramb-compare */,
 			);
@@ -559,9 +559,9 @@
 			productReference = 68BD915022A29AEA005D1211 /* peramb-compare */;
 			productType = "com.apple.product-type.tool";
 		};
-		68E76D0C22A1C11500310CB5 /* 2pt-fit */ = {
+		68E76D0C22A1C11500310CB5 /* latan-2pt-fit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68E76D1322A1C11500310CB5 /* Build configuration list for PBXNativeTarget "2pt-fit" */;
+			buildConfigurationList = 68E76D1322A1C11500310CB5 /* Build configuration list for PBXNativeTarget "latan-2pt-fit" */;
 			buildPhases = (
 				68E76D0922A1C11500310CB5 /* Sources */,
 				68E76D0A22A1C11500310CB5 /* Frameworks */,
@@ -571,9 +571,9 @@
 			);
 			dependencies = (
 			);
-			name = "2pt-fit";
+			name = "latan-2pt-fit";
 			productName = "2pt-fit";
-			productReference = 68E76D0D22A1C11500310CB5 /* 2pt-fit */;
+			productReference = 68E76D0D22A1C11500310CB5 /* latan-2pt-fit */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -616,7 +616,7 @@
 			targets = (
 				68087BE322A1B18E001D368C /* Lexers */,
 				681C509D22A1AFF500FF10F4 /* LatAnalyze */,
-				68E76D0C22A1C11500310CB5 /* 2pt-fit */,
+				68E76D0C22A1C11500310CB5 /* latan-2pt-fit */,
 				68BD914022A298D5005D1211 /* bootstrap */,
 				68BD914F22A29AEA005D1211 /* peramb-compare */,
 			);
@@ -1004,7 +1004,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEPLOYMENT_LOCATION = YES;
+				INSTALL_PATH = physics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -1012,7 +1015,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEPLOYMENT_LOCATION = YES;
+				INSTALL_PATH = physics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
@@ -1064,7 +1070,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68E76D1322A1C11500310CB5 /* Build configuration list for PBXNativeTarget "2pt-fit" */ = {
+		68E76D1322A1C11500310CB5 /* Build configuration list for PBXNativeTarget "latan-2pt-fit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68E76D1122A1C11500310CB5 /* Debug */,
