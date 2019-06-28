@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		681FF6CC22C36B0A00F860EB /* sample-combine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68088E8422A1B2B0001D368C /* sample-combine.cpp */; };
+		681FF6CD22C36B4300F860EB /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
+		681FF6D922C36BDE00F860EB /* sample-combine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68088E8422A1B2B0001D368C /* sample-combine.cpp */; };
+		681FF6DA22C36BE500F860EB /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
+		682180C122C67A9C0022B83B /* sample-plot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68088E8322A1B2B0001D368C /* sample-plot.cpp */; };
+		682180C222C67AB60022B83B /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
 		68A4A4A322A6AB9A00C348AB /* peramb-compare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68A4A4A222A6AB9A00C348AB /* peramb-compare.cpp */; };
 		68BD911422A29645005D1211 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD588522A29435005D1211 /* Exceptions.cpp */; };
 		68BD911522A29645005D1211 /* Mat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD589322A29435005D1211 /* Mat.cpp */; };
@@ -66,6 +72,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		681FF6C222C36AF400F860EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		681FF6D022C36BBB00F860EB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		682180B822C67A860022B83B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		68BD913F22A298D5005D1211 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -120,6 +153,9 @@
 		68088E8622A1B2B0001D368C /* sample-read.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "sample-read.cpp"; sourceTree = "<group>"; };
 		680897C822A1B2B2001D368C /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLatAnalyze.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		681FF6C422C36AF400F860EB /* latan-resample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-resample"; sourceTree = BUILT_PRODUCTS_DIR; };
+		681FF6D222C36BBB00F860EB /* latan-sample-combine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-sample-combine"; sourceTree = BUILT_PRODUCTS_DIR; };
+		682180BA22C67A860022B83B /* latan-sample-plot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-sample-plot"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A4A4A222A6AB9A00C348AB /* peramb-compare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "peramb-compare.cpp"; sourceTree = "<group>"; };
 		68BD587522A29435005D1211 /* Dataset.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dataset.hpp; sourceTree = "<group>"; };
 		68BD587622A29435005D1211 /* XYSampleData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XYSampleData.cpp; sourceTree = "<group>"; };
@@ -227,6 +263,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		681FF6C122C36AF400F860EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681FF6CD22C36B4300F860EB /* libLatAnalyze.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681FF6CF22C36BBB00F860EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681FF6DA22C36BE500F860EB /* libLatAnalyze.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682180B722C67A860022B83B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682180C222C67AB60022B83B /* libLatAnalyze.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		68BD913E22A298D5005D1211 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,6 +379,9 @@
 				68E76D0D22A1C11500310CB5 /* latan-2pt-fit */,
 				68BD914122A298D5005D1211 /* bootstrap */,
 				68BD915022A29AEA005D1211 /* peramb-compare */,
+				681FF6C422C36AF400F860EB /* latan-resample */,
+				681FF6D222C36BBB00F860EB /* latan-sample-combine */,
+				682180BA22C67A860022B83B /* latan-sample-plot */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -525,6 +588,57 @@
 			productReference = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		681FF6C322C36AF400F860EB /* latan-resample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681FF6CA22C36AF500F860EB /* Build configuration list for PBXNativeTarget "latan-resample" */;
+			buildPhases = (
+				681FF6C022C36AF400F860EB /* Sources */,
+				681FF6C122C36AF400F860EB /* Frameworks */,
+				681FF6C222C36AF400F860EB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "latan-resample";
+			productName = "latan-resample";
+			productReference = 681FF6C422C36AF400F860EB /* latan-resample */;
+			productType = "com.apple.product-type.tool";
+		};
+		681FF6D122C36BBB00F860EB /* latan-sample-combine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 681FF6D622C36BBB00F860EB /* Build configuration list for PBXNativeTarget "latan-sample-combine" */;
+			buildPhases = (
+				681FF6CE22C36BBB00F860EB /* Sources */,
+				681FF6CF22C36BBB00F860EB /* Frameworks */,
+				681FF6D022C36BBB00F860EB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "latan-sample-combine";
+			productName = "latan-sample-combine";
+			productReference = 681FF6D222C36BBB00F860EB /* latan-sample-combine */;
+			productType = "com.apple.product-type.tool";
+		};
+		682180B922C67A860022B83B /* latan-sample-plot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682180C022C67A860022B83B /* Build configuration list for PBXNativeTarget "latan-sample-plot" */;
+			buildPhases = (
+				682180B622C67A860022B83B /* Sources */,
+				682180B722C67A860022B83B /* Frameworks */,
+				682180B822C67A860022B83B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "latan-sample-plot";
+			productName = "latan-sample-plot";
+			productReference = 682180BA22C67A860022B83B /* latan-sample-plot */;
+			productType = "com.apple.product-type.tool";
+		};
 		68BD914022A298D5005D1211 /* bootstrap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68BD914522A298D6005D1211 /* Build configuration list for PBXNativeTarget "bootstrap" */;
@@ -591,6 +705,15 @@
 					681C509D22A1AFF500FF10F4 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
+					681FF6C322C36AF400F860EB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					681FF6D122C36BBB00F860EB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					682180B922C67A860022B83B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					68BD914022A298D5005D1211 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -619,6 +742,9 @@
 				68E76D0C22A1C11500310CB5 /* latan-2pt-fit */,
 				68BD914022A298D5005D1211 /* bootstrap */,
 				68BD914F22A29AEA005D1211 /* peramb-compare */,
+				681FF6C322C36AF400F860EB /* latan-resample */,
+				681FF6D122C36BBB00F860EB /* latan-sample-combine */,
+				682180B922C67A860022B83B /* latan-sample-plot */,
 			);
 		};
 /* End PBXProject section */
@@ -668,6 +794,30 @@
 				68BD912122A2965C005D1211 /* TabFunction.cpp in Sources */,
 				68BD913922A296B7005D1211 /* XYSampleData.cpp in Sources */,
 				68BD912F22A296A3005D1211 /* GslQagsIntegrator.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681FF6C022C36AF400F860EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681FF6CC22C36B0A00F860EB /* sample-combine.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681FF6CE22C36BBB00F860EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681FF6D922C36BDE00F860EB /* sample-combine.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682180B622C67A860022B83B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682180C122C67A9C0022B83B /* sample-plot.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -968,6 +1118,54 @@
 			};
 			name = Release;
 		};
+		681FF6C822C36AF500F860EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		681FF6C922C36AF500F860EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		681FF6D722C36BBB00F860EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		681FF6D822C36BBB00F860EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		682180BE22C67A860022B83B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		682180BF22C67A860022B83B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		68BD914622A298D6005D1211 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1048,6 +1246,33 @@
 			buildConfigurations = (
 				681C50AA22A1AFF500FF10F4 /* Debug */,
 				681C50AB22A1AFF500FF10F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681FF6CA22C36AF500F860EB /* Build configuration list for PBXNativeTarget "latan-resample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681FF6C822C36AF500F860EB /* Debug */,
+				681FF6C922C36AF500F860EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681FF6D622C36BBB00F860EB /* Build configuration list for PBXNativeTarget "latan-sample-combine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				681FF6D722C36BBB00F860EB /* Debug */,
+				681FF6D822C36BBB00F860EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682180C022C67A860022B83B /* Build configuration list for PBXNativeTarget "latan-sample-plot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682180BE22C67A860022B83B /* Debug */,
+				682180BF22C67A860022B83B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

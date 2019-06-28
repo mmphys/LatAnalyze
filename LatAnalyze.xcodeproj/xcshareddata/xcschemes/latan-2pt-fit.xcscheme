@@ -47,7 +47,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/s1786208/src/pion/r_tmp"
+      customWorkingDirectory = "/Users/s1786208/data/pion"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -85,19 +85,23 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-h"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "--uncorr"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-r60"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "pion_phiL_0_rhoL.h5"
+            argument = "pion10.phiL_0_rhoL.bootstrap.2998928248.h5"
             isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "pion_phiL_0_rhoL.h5"
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "pion_phiL_g5_0_rhoL_g5.h5"
