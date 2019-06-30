@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		681FF6CC22C36B0A00F860EB /* sample-combine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68088E8422A1B2B0001D368C /* sample-combine.cpp */; };
-		681FF6CD22C36B4300F860EB /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
+		681FF6CD22C36B4300F860EB /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
 		681FF6D922C36BDE00F860EB /* sample-combine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68088E8422A1B2B0001D368C /* sample-combine.cpp */; };
-		681FF6DA22C36BE500F860EB /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
+		681FF6DA22C36BE500F860EB /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
 		682180C122C67A9C0022B83B /* sample-plot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68088E8322A1B2B0001D368C /* sample-plot.cpp */; };
-		682180C222C67AB60022B83B /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
+		682180C222C67AB60022B83B /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
 		68A4A4A322A6AB9A00C348AB /* peramb-compare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68A4A4A222A6AB9A00C348AB /* peramb-compare.cpp */; };
 		68BD911422A29645005D1211 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD588522A29435005D1211 /* Exceptions.cpp */; };
 		68BD911522A29645005D1211 /* Mat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD589322A29435005D1211 /* Mat.cpp */; };
@@ -55,10 +55,10 @@
 		68BD913A22A296B7005D1211 /* XYStatData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD587822A29435005D1211 /* XYStatData.cpp */; };
 		68BD913B22A296C4005D1211 /* Global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD5A1D22A29436005D1211 /* Global.cpp */; };
 		68BD914822A298EC005D1211 /* bootstrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD913C22A298A3005D1211 /* bootstrap.cpp */; };
-		68BD914A22A29905005D1211 /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
-		68BD915822A29B13005D1211 /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
+		68BD914A22A29905005D1211 /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
+		68BD915822A29B13005D1211 /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
 		68E76D1422A1C12D00310CB5 /* 2pt-fit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6808853922A1B2AE001D368C /* 2pt-fit.cpp */; };
-		68E76D1622A1C15C00310CB5 /* libLatAnalyze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */; };
+		68E76D1622A1C15C00310CB5 /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,7 +152,7 @@
 		68088E8422A1B2B0001D368C /* sample-combine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "sample-combine.cpp"; sourceTree = "<group>"; };
 		68088E8622A1B2B0001D368C /* sample-read.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "sample-read.cpp"; sourceTree = "<group>"; };
 		680897C822A1B2B2001D368C /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
-		681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLatAnalyze.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLatAnalyzeXcode.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		681FF6C422C36AF400F860EB /* latan-resample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-resample"; sourceTree = BUILT_PRODUCTS_DIR; };
 		681FF6D222C36BBB00F860EB /* latan-sample-combine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-sample-combine"; sourceTree = BUILT_PRODUCTS_DIR; };
 		682180BA22C67A860022B83B /* latan-sample-plot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-sample-plot"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,7 +267,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				681FF6CD22C36B4300F860EB /* libLatAnalyze.a in Frameworks */,
+				681FF6CD22C36B4300F860EB /* libLatAnalyzeXcode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +275,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				681FF6DA22C36BE500F860EB /* libLatAnalyze.a in Frameworks */,
+				681FF6DA22C36BE500F860EB /* libLatAnalyzeXcode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +283,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682180C222C67AB60022B83B /* libLatAnalyze.a in Frameworks */,
+				682180C222C67AB60022B83B /* libLatAnalyzeXcode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +291,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BD914A22A29905005D1211 /* libLatAnalyze.a in Frameworks */,
+				68BD914A22A29905005D1211 /* libLatAnalyzeXcode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +299,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BD915822A29B13005D1211 /* libLatAnalyze.a in Frameworks */,
+				68BD915822A29B13005D1211 /* libLatAnalyzeXcode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68E76D1622A1C15C00310CB5 /* libLatAnalyze.a in Frameworks */,
+				68E76D1622A1C15C00310CB5 /* libLatAnalyzeXcode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +375,7 @@
 		681C509F22A1AFF500FF10F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */,
+				681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */,
 				68E76D0D22A1C11500310CB5 /* latan-2pt-fit */,
 				68BD914122A298D5005D1211 /* bootstrap */,
 				68BD915022A29AEA005D1211 /* peramb-compare */,
@@ -585,7 +585,7 @@
 			);
 			name = LatAnalyze;
 			productName = LatAnalyze;
-			productReference = 681C509E22A1AFF500FF10F4 /* libLatAnalyze.a */;
+			productReference = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		681FF6C322C36AF400F860EB /* latan-resample */ = {
@@ -1090,7 +1090,7 @@
 				INSTALL_PATH = lib/.libs;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)Xcode";
 				SKIP_INSTALL = NO;
 			};
 			name = Debug;
@@ -1113,7 +1113,7 @@
 				INSTALL_PATH = lib/.libs;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)Xcode";
 				SKIP_INSTALL = NO;
 			};
 			name = Release;
