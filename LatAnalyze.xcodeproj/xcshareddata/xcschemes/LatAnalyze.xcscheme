@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "681C509D22A1AFF500FF10F4"
-               BuildableName = "libLatAnalyze.a"
+               BuildableName = "libLatAnalyzeXcode.a"
                BlueprintName = "LatAnalyze"
                ReferencedContainer = "container:LatAnalyze.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "681C509D22A1AFF500FF10F4"
-            BuildableName = "libLatAnalyze.a"
+            BuildableName = "libLatAnalyzeXcode.a"
             BlueprintName = "LatAnalyze"
             ReferencedContainer = "container:LatAnalyze.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "681C509D22A1AFF500FF10F4"
-            BuildableName = "libLatAnalyze.a"
+            BuildableName = "libLatAnalyzeXcode.a"
             BlueprintName = "LatAnalyze"
             ReferencedContainer = "container:LatAnalyze.xcodeproj">
          </BuildableReference>

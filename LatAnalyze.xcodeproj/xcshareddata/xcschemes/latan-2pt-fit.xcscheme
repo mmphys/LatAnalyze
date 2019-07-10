@@ -68,11 +68,19 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "--tf60"
+            argument = "--fold"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--tf10"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-mcosh"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-mexp"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
@@ -81,7 +89,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-p"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-h"
@@ -97,7 +105,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "pion10.phiL_0_rhoL.bootstrap.2998928248.h5"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "pion_phiL_0_rhoL.h5"
@@ -105,6 +113,14 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "pion_phiL_g5_0_rhoL_g5.h5"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "$HOME/data/201906Meson/analyze/light_100/phiL_0_rhoL.bootstrap.4147798751.h5"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "$HOME/data/201906Meson/analyze/light_100/phiL_ax_0_rhoL_ax.bootstrap.4147798751.h5"
             isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
