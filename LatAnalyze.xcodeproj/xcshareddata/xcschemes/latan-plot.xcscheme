@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "681C509D22A1AFF500FF10F4"
-               BuildableName = "libLatAnalyzeXcode.a"
-               BlueprintName = "LatAnalyze"
+               BlueprintIdentifier = "682180B922C67A860022B83B"
+               BuildableName = "latan-plot"
+               BlueprintName = "latan-plot"
                ReferencedContainer = "container:LatAnalyze.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,6 +27,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "682180B922C67A860022B83B"
+            BuildableName = "latan-plot"
+            BlueprintName = "latan-plot"
+            ReferencedContainer = "container:LatAnalyze.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
       </Testables>
    </TestAction>
@@ -35,20 +44,35 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
-      useCustomWorkingDirectory = "NO"
+      useCustomWorkingDirectory = "YES"
+      customWorkingDirectory = "$PROJECT_DIR/../Utility/run"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "681C509D22A1AFF500FF10F4"
-            BuildableName = "libLatAnalyzeXcode.a"
-            BlueprintName = "LatAnalyze"
+            BlueprintIdentifier = "682180B922C67A860022B83B"
+            BuildableName = "latan-plot"
+            BlueprintName = "latan-plot"
             ReferencedContainer = "container:LatAnalyze.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "phiL_0_rhoL.bootstrap.987654321.h5"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "PATH"
+            value = "/opt/local/bin"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -56,15 +80,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "681C509D22A1AFF500FF10F4"
-            BuildableName = "libLatAnalyzeXcode.a"
-            BlueprintName = "LatAnalyze"
+            BlueprintIdentifier = "682180B922C67A860022B83B"
+            BuildableName = "latan-plot"
+            BlueprintName = "latan-plot"
             ReferencedContainer = "container:LatAnalyze.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

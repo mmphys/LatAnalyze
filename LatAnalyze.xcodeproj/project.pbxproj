@@ -11,7 +11,6 @@
 		681FF6CD22C36B4300F860EB /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
 		681FF6D922C36BDE00F860EB /* sample-combine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68088E8422A1B2B0001D368C /* sample-combine.cpp */; };
 		681FF6DA22C36BE500F860EB /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
-		682180C122C67A9C0022B83B /* sample-plot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68088E8322A1B2B0001D368C /* sample-plot.cpp */; };
 		682180C222C67AB60022B83B /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
 		68A4A4A322A6AB9A00C348AB /* peramb-compare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68A4A4A222A6AB9A00C348AB /* peramb-compare.cpp */; };
 		68BD911422A29645005D1211 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD588522A29435005D1211 /* Exceptions.cpp */; };
@@ -21,7 +20,6 @@
 		68BD911822A29645005D1211 /* MathLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD911222A29626005D1211 /* MathLexer.cpp */; };
 		68BD911922A29645005D1211 /* MathParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD911122A29626005D1211 /* MathParser.cpp */; };
 		68BD911A22A29645005D1211 /* OptParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD589122A29435005D1211 /* OptParser.cpp */; };
-		68BD911B22A29645005D1211 /* Plot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD588822A29435005D1211 /* Plot.cpp */; };
 		68BD911C22A29645005D1211 /* Utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD589022A29435005D1211 /* Utilities.cpp */; };
 		68BD911D22A2965C005D1211 /* CompiledFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD5A2722A29436005D1211 /* CompiledFunction.cpp */; };
 		68BD911E22A2965C005D1211 /* CompiledModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD5A2122A29436005D1211 /* CompiledModel.cpp */; };
@@ -57,6 +55,8 @@
 		68BD914822A298EC005D1211 /* bootstrap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD913C22A298A3005D1211 /* bootstrap.cpp */; };
 		68BD914A22A29905005D1211 /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
 		68BD915822A29B13005D1211 /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
+		68D8BAD82350BB1F002AA30F /* Plot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68BD588822A29435005D1211 /* Plot.cpp */; };
+		68D8BADB2350BE51002AA30F /* plot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68D8BAD92350BB66002AA30F /* plot.cpp */; };
 		68E76D1422A1C12D00310CB5 /* 2pt-fit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6808853922A1B2AE001D368C /* 2pt-fit.cpp */; };
 		68E76D1622A1C15C00310CB5 /* libLatAnalyzeXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */; };
 /* End PBXBuildFile section */
@@ -155,7 +155,7 @@
 		681C509E22A1AFF500FF10F4 /* libLatAnalyzeXcode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLatAnalyzeXcode.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		681FF6C422C36AF400F860EB /* latan-resample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-resample"; sourceTree = BUILT_PRODUCTS_DIR; };
 		681FF6D222C36BBB00F860EB /* latan-sample-combine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-sample-combine"; sourceTree = BUILT_PRODUCTS_DIR; };
-		682180BA22C67A860022B83B /* latan-sample-plot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-sample-plot"; sourceTree = BUILT_PRODUCTS_DIR; };
+		682180BA22C67A860022B83B /* latan-plot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-plot"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A4A4A222A6AB9A00C348AB /* peramb-compare.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "peramb-compare.cpp"; sourceTree = "<group>"; };
 		68BD587522A29435005D1211 /* Dataset.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dataset.hpp; sourceTree = "<group>"; };
 		68BD587622A29435005D1211 /* XYSampleData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XYSampleData.cpp; sourceTree = "<group>"; };
@@ -252,6 +252,7 @@
 		68BD913C22A298A3005D1211 /* bootstrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bootstrap.cpp; sourceTree = "<group>"; };
 		68BD914122A298D5005D1211 /* bootstrap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bootstrap; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BD915022A29AEA005D1211 /* peramb-compare */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "peramb-compare"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D8BAD92350BB66002AA30F /* plot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plot.cpp; sourceTree = "<group>"; };
 		68E76D0D22A1C11500310CB5 /* latan-2pt-fit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-2pt-fit"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -346,14 +347,15 @@
 		68088E7C22A1B2B0001D368C /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				68088E7D22A1B2B0001D368C /* sample-ft.cpp */,
-				68088E7E22A1B2B0001D368C /* sample-element.cpp */,
-				68088E7F22A1B2B0001D368C /* resample.cpp */,
 				68088E8022A1B2B0001D368C /* Makefile.am */,
+				68D8BAD92350BB66002AA30F /* plot.cpp */,
+				68088E7F22A1B2B0001D368C /* resample.cpp */,
+				68088E8422A1B2B0001D368C /* sample-combine.cpp */,
+				68088E7E22A1B2B0001D368C /* sample-element.cpp */,
 				68088E8122A1B2B0001D368C /* sample-fake.cpp */,
+				68088E7D22A1B2B0001D368C /* sample-ft.cpp */,
 				68088E8222A1B2B0001D368C /* sample-plot-corr.cpp */,
 				68088E8322A1B2B0001D368C /* sample-plot.cpp */,
-				68088E8422A1B2B0001D368C /* sample-combine.cpp */,
 				68088E8622A1B2B0001D368C /* sample-read.cpp */,
 			);
 			path = utils;
@@ -381,7 +383,7 @@
 				68BD915022A29AEA005D1211 /* peramb-compare */,
 				681FF6C422C36AF400F860EB /* latan-resample */,
 				681FF6D222C36BBB00F860EB /* latan-sample-combine */,
-				682180BA22C67A860022B83B /* latan-sample-plot */,
+				682180BA22C67A860022B83B /* latan-plot */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -622,9 +624,9 @@
 			productReference = 681FF6D222C36BBB00F860EB /* latan-sample-combine */;
 			productType = "com.apple.product-type.tool";
 		};
-		682180B922C67A860022B83B /* latan-sample-plot */ = {
+		682180B922C67A860022B83B /* latan-plot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 682180C022C67A860022B83B /* Build configuration list for PBXNativeTarget "latan-sample-plot" */;
+			buildConfigurationList = 682180C022C67A860022B83B /* Build configuration list for PBXNativeTarget "latan-plot" */;
 			buildPhases = (
 				682180B622C67A860022B83B /* Sources */,
 				682180B722C67A860022B83B /* Frameworks */,
@@ -634,9 +636,9 @@
 			);
 			dependencies = (
 			);
-			name = "latan-sample-plot";
+			name = "latan-plot";
 			productName = "latan-sample-plot";
-			productReference = 682180BA22C67A860022B83B /* latan-sample-plot */;
+			productReference = 682180BA22C67A860022B83B /* latan-plot */;
 			productType = "com.apple.product-type.tool";
 		};
 		68BD914022A298D5005D1211 /* bootstrap */ = {
@@ -742,9 +744,9 @@
 				68E76D0C22A1C11500310CB5 /* latan-2pt-fit */,
 				68BD914022A298D5005D1211 /* bootstrap */,
 				68BD914F22A29AEA005D1211 /* peramb-compare */,
+				682180B922C67A860022B83B /* latan-plot */,
 				681FF6C322C36AF400F860EB /* latan-resample */,
 				681FF6D122C36BBB00F860EB /* latan-sample-combine */,
-				682180B922C67A860022B83B /* latan-sample-plot */,
 			);
 		};
 /* End PBXProject section */
@@ -756,7 +758,6 @@
 			files = (
 				68BD912922A29674005D1211 /* XmlReader.cpp in Sources */,
 				68BD912722A29674005D1211 /* Hdf5File.cpp in Sources */,
-				68BD911B22A29645005D1211 /* Plot.cpp in Sources */,
 				68BD912A22A29689005D1211 /* tinyxml2.cpp in Sources */,
 				68BD912822A29674005D1211 /* Io.cpp in Sources */,
 				68BD912022A2965C005D1211 /* Model.cpp in Sources */,
@@ -779,6 +780,7 @@
 				68BD911E22A2965C005D1211 /* CompiledModel.cpp in Sources */,
 				68BD913522A296B7005D1211 /* FitInterface.cpp in Sources */,
 				68BD912E22A296A3005D1211 /* GslMinimizer.cpp in Sources */,
+				68D8BAD82350BB1F002AA30F /* Plot.cpp in Sources */,
 				68BD912622A29674005D1211 /* File.cpp in Sources */,
 				68BD912422A29674005D1211 /* AsciiParser.cpp in Sources */,
 				68BD911722A29645005D1211 /* MathInterpreter.cpp in Sources */,
@@ -817,7 +819,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682180C122C67A9C0022B83B /* sample-plot.cpp in Sources */,
+				68D8BADB2350BE51002AA30F /* plot.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -916,6 +918,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = $PROJECT_DIR/build;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -943,6 +946,7 @@
 					$GridPre/openmpi/include,
 					$GridPre/lime/include,
 				);
+				INSTALL_PATH = utils;
 				LIBRARY_SEARCH_PATHS = (
 					$GridPkg/lib,
 					$GridPre/lib,
@@ -1015,6 +1019,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = $PROJECT_DIR/build;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1036,6 +1041,7 @@
 					$GridPre/openmpi/include,
 					$GridPre/lime/include,
 				);
+				INSTALL_PATH = utils;
 				LIBRARY_SEARCH_PATHS = (
 					$GridPkg/lib,
 					$GridPre/lib,
@@ -1268,7 +1274,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		682180C022C67A860022B83B /* Build configuration list for PBXNativeTarget "latan-sample-plot" */ = {
+		682180C022C67A860022B83B /* Build configuration list for PBXNativeTarget "latan-plot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				682180BE22C67A860022B83B /* Debug */,
