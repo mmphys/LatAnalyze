@@ -252,7 +252,7 @@
 		68BD913C22A298A3005D1211 /* bootstrap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bootstrap.cpp; sourceTree = "<group>"; };
 		68BD914122A298D5005D1211 /* bootstrap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bootstrap; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BD915022A29AEA005D1211 /* peramb-compare */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "peramb-compare"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68D8BAD92350BB66002AA30F /* plot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plot.cpp; sourceTree = "<group>"; };
+		68D8BAD92350BB66002AA30F /* plot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plot.cpp; sourceTree = "<group>"; };
 		68E76D0D22A1C11500310CB5 /* latan-2pt-fit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "latan-2pt-fit"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -943,19 +943,15 @@
 					$GridPre/include,
 					"$Grid/build$(CONFIGURATION)/Grid",
 					$Grid,
-					$GridPre/openmpi/include,
-					$GridPre/lime/include,
 				);
 				INSTALL_PATH = utils;
 				LIBRARY_SEARCH_PATHS = (
-					$GridPkg/lib,
 					$GridPre/lib,
+					$GridPkg/lib,
 					"$Grid/build$(CONFIGURATION)/Grid",
 					"$Grid/build$(CONFIGURATION)/Hadrons",
-					$GridPre/openmpi/lib,
-					$GridPre/lime/lib,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1038,19 +1034,15 @@
 					$GridPre/include,
 					"$Grid/build$(CONFIGURATION)/Grid",
 					$Grid,
-					$GridPre/openmpi/include,
-					$GridPre/lime/include,
 				);
 				INSTALL_PATH = utils;
 				LIBRARY_SEARCH_PATHS = (
-					$GridPkg/lib,
 					$GridPre/lib,
+					$GridPkg/lib,
 					"$Grid/build$(CONFIGURATION)/Grid",
 					"$Grid/build$(CONFIGURATION)/Hadrons",
-					$GridPre/openmpi/lib,
-					$GridPre/lime/lib,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = (
